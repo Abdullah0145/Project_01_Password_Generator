@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-Generator</title>
+</head>
+<body>
+    <!-- Here using div - main container -->
+    <div id="main-container">
+        
+             <!-- Here using heading (h1) tag -->
+            <h1>Password Generator</h1>
+
+
+            <!-- Here using div - display container -->
+            <div class="display-container">
+                <!-- Here using input field, readonly, placeholder, class, and custom attribute -->
+                <input readonly placeholder="Password" class="display" data-passwordDisplay>
+            <!-- Here using button tag -->
+            <button>
+                <!-- Here using Span tag and custom attribute -->
+                <span data-copyMsg></span>
+                <!-- Here using image tag attribute, alt, width and height -->
+                <img src="./assets/clone-regular.svg" alt="CopiedImage" width="20" height="20"/>
+            </button>
+            </div>
+
+
+            <!-- Here using div - input container -->
+            <div class="input-container">
+                <!-- Password length section -->
+                <!-- Here using div - password container -->
+                <div class="password-length">
+                    <!-- Here using pragraph (p) tag -->
+                    <p>Password Length</p>
+                    <!-- Here using paragraph (p) tag custom attribute -->
+                    <p data-lengthNumber>0</p>
+                </div>
+
+
+                <!-- Slider section -->
+                <!-- Here using input type range for Slider, min, max, class and step -->
+                <input type="range" min="1" max="20" class="slider" step="1" data-rangeSlider>
+
+
+                <!-- for checkboxes Section -->
+                <!-- Here using div container -->
+                <div>
+                    <!-- Here using input field and id -->
+                    <input type="checkbox" id="uppercase">
+                    <!-- Here using label -->
+                    <label for="uppercase">Includes Uppercase Letters</label>
+                </div>
+                <div>
+                    <!-- Here using input field and id -->
+                    <input type="checkbox" id="lowercase">
+                    <!-- Here using label -->
+                    <label for="lowercase">Includes Lowercase Letters</label>
+                </div>
+                <div>
+                    <!-- Here using input field and id -->
+                    <input type="checkbox" id="numbers">
+                    <!-- Here using label -->
+                    <label for="numbers">Includes Numbers</label>
+                </div>
+                <div>
+                    <!-- Here using input field and id -->
+                    <input type="checkbox" id="symbols">
+                    <!-- Here using label -->
+                    <label for="symbols">Includes Symbols</label>
+                </div>
+
+
+                <!-- Strength Section -->
+                <!-- Here using div - strength container -->
+                <div class="strength-container">
+                <!-- Here using Paragraph (p) tag -->
+                <p>Strength</p>
+                <!-- Here using div and custom attribute -->
+                <div data-indicatorInput></div>
+                </div>
+
+
+                <!-- generate password button -->
+                <!-- Here using button and class(.) -->
+                <button class="generateButton">Generate Password</button>
+            </div>
+    </div>
+</body>
+</html>
