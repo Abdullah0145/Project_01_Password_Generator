@@ -6,19 +6,18 @@
     <title>Password-Generator</title>
 </head>
 <body>
-    <!-- Here using div - main container -->
-    <div id="main-container">
-        
+    <!-- Here using div class (.) - container -->
+    <div class="container">
+
              <!-- Here using heading (h1) tag -->
             <h1>Password Generator</h1>
 
-
-            <!-- Here using div - display container -->
+            <!-- Here using div class - display container -->
             <div class="display-container">
                 <!-- Here using input field, readonly, placeholder, class, and custom attribute -->
                 <input readonly placeholder="Password" class="display" data-passwordDisplay>
-            <!-- Here using button tag -->
-            <button>
+            <!-- Here using button tag and custom attribute -->
+            <button data-copy>
                 <!-- Here using Span tag and custom attribute -->
                 <span data-copyMsg></span>
                 <!-- Here using image tag attribute, alt, width and height -->
@@ -26,66 +25,63 @@
             </button>
             </div>
 
-
-            <!-- Here using div - input container -->
+            <!-- Here using div class - input container -->
             <div class="input-container">
-                <!-- Password length section -->
-                <!-- Here using div - password container -->
-                <div class="password-length">
-                    <!-- Here using pragraph (p) tag -->
+
+                <!-- Password Length section -->
+                <!-- Here using div  class - length container -->
+                <div class="length-container">
+                    <!-- Here using pragraph (p) tag  for string-->
                     <p>Password Length</p>
-                    <!-- Here using paragraph (p) tag custom attribute -->
+                    <!-- Here using paragraph (p) tag , custom attribute for number -->
                     <p data-lengthNumber>0</p>
                 </div>
 
-
                 <!-- Slider section -->
-                <!-- Here using input type range for Slider, min, max, class and step -->
-                <input type="range" min="1" max="20" class="slider" step="1" data-rangeSlider>
+                <!-- Here using input type range for Slider, min, max, class and step and custom attribute-->
+                <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
 
-
-                <!-- for checkboxes Section -->
+                <!-- Checkboxes section -->
                 <!-- Here using div container -->
                 <div>
                     <!-- Here using input field and id -->
                     <input type="checkbox" id="uppercase">
-                    <!-- Here using label -->
+                    <!-- Here using label for Includes Uppercase Letters -->
                     <label for="uppercase">Includes Uppercase Letters</label>
                 </div>
                 <div>
-                    <!-- Here using input field and id -->
+                    <!-- Here using input type checkbox and id -->
                     <input type="checkbox" id="lowercase">
-                    <!-- Here using label -->
+                    <!-- Here using label for Includes Lowercase Letters -->
                     <label for="lowercase">Includes Lowercase Letters</label>
                 </div>
                 <div>
-                    <!-- Here using input field and id -->
+                    <!-- Here using input type checkbox and id -->
                     <input type="checkbox" id="numbers">
-                    <!-- Here using label -->
+                    <!-- Here using label for Includes Numbers -->
                     <label for="numbers">Includes Numbers</label>
                 </div>
                 <div>
-                    <!-- Here using input field and id -->
+                    <!-- Here using input type checkbox and id -->
                     <input type="checkbox" id="symbols">
-                    <!-- Here using label -->
+                    <!-- Here using label for Includes Symbols -->
                     <label for="symbols">Includes Symbols</label>
                 </div>
 
-
                 <!-- Strength Section -->
-                <!-- Here using div - strength container -->
+                <!-- Here using div class - strength container -->
                 <div class="strength-container">
                 <!-- Here using Paragraph (p) tag -->
                 <p>Strength</p>
                 <!-- Here using div and custom attribute -->
-                <div data-indicatorInput></div>
+                <div data-indicator></div>
                 </div>
 
-
-                <!-- generate password button -->
+                <!-- generate password button section -->
                 <!-- Here using button and class(.) -->
                 <button class="generateButton">Generate Password</button>
             </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
